@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <h1 style="text-align: center">veterinary Conference</h1>
     <% if session[:user_id]%>
-  	<h3><li>logging: (<%= User.find(session[:user_id]).name%>)   <%= link_to "Log out", logout_path%></li> </h3> 
+  	<h3><li>logging: (<%= User.find(session[:user_id]).name%>)   <%= link_to "Log out", logout_path, :method => "delete"%></li> </h3> 
   	<%else%>
   	<%= link_to "Sign in", login_path%>
   <%end%>
