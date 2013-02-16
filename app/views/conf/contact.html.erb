@@ -1,2 +1,23 @@
-<h1>Conf#contact</h1>
-<p>Find me in app/views/conf/contact.html.erb</p>
+<h2 style="text-align: center"> Contact Us</h2>>
+<div id = "centered">
+<p>
+		
+		<br />
+
+	<p style="text-align: center">
+	<%= image_tag(@photo, :width => '1000', :height => '500')%>
+	</p>
+	<br />
+<p style="text-align: center; color: #FF0000">
+	<h3 style="text-align: center; color: red">Coming Soon ....</h3>
+</p>
+</p>
+<fieldset>
+	<legend>Site Map</legend>
+	<%= link_to "Home", conf_home_path%> <br />
+	<%= link_to "Register", conf_register_path%> <br />
+	<%= link_to "Contact Us", conf_contact_path%> <br />
+	<%= link_to "Submission", conf_submit_path%> <br />
+	<%= link_to "About Us", conf_about_path%> <br />
+</fieldset>
+</div>

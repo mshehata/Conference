@@ -1,7 +1,26 @@
-<h1 style="text-align: center">veterinary Conference</h1>
+
+<h2 style="text-align: center"> Home Page</h2>>
 <div id = "centered">
-<p style="text-align: center">
-	
-	<%= image_tag(@photo)%>
+<p>
+		
+		<br />
+
+	<p style="text-align: center">
+	<%= image_tag(@photo, :width => '1000', :height => '500')%>
+	</p>
+
+<br />
+<p style="text-align: center; color: #FF0000">
+	<h3 style="text-align: center; color: red">Coming Soon ....</h3>
 </p>
+	
+</p>
+<fieldset>
+	<legend>Site Map</legend>
+	<%= link_to "Home", conf_home_path%> <br />
+	<%= link_to "Register", conf_register_path%> <br />
+	<%= link_to "Contact Us", conf_contact_path%> <br />
+	<%= link_to "Submission", conf_submit_path%> <br />
+	<%= link_to "About Us", conf_about_path%> <br />
+</fieldset>
 </div>
